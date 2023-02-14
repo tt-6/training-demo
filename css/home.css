@@ -1,0 +1,237 @@
+@import url(style.css);
+
+
+
+.warning h2 , .warning p{
+    text-align: center;
+}
+
+.warning h2{
+    font-weight: 900;
+}
+
+.warning p{
+    color: var(--grey-text);
+    margin-top: 0.5rem;
+}
+
+.warning span:first-child{
+    font-size: 3rem;
+    text-align: center;
+
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.warning span:last-child{
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+
+    color: var(--grey-text);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: light;
+}
+
+.mobile-container{
+    display: none;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    /*  */
+
+    .warning{
+        display: none;
+    }
+
+    .mobile-container{
+        display: block;
+        padding: 1rem;
+    }
+
+    .navbar{
+        text-align: left;
+    }
+
+    .navbar span{
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .navbar span:hover{
+        color: var(--grey-text);
+        transition: 0.5s;
+    }
+
+    .info-container{
+        display: flex;
+        position: fixed;
+
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        background-color: var(--light-color);
+        padding: 1rem;
+    }
+
+    .info-container span:first-child{
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        right: 0;
+        cursor: pointer;
+        font-size: 1.3rem;
+    }
+
+    
+
+    .info-container p{
+        max-width: 75vw;
+        text-align: center;
+        color: var(--grey-text);
+    }
+
+    .info-container span:last-child{
+        position: fixed;
+        bottom: 0.5rem;
+        left: 0;
+        right: 0;
+
+        color: var(--grey-text);
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: light; 
+    }
+
+    .hide-info-container{
+        display: none;
+    }
+
+    .header-container{
+        margin-top: 3.5rem;
+    }
+
+    .header-container h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .header-container p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--grey-text);
+
+        margin-top: 0.2rem;
+    }
+
+    .body-container{
+        margin-top: 2rem;
+    }
+
+    .body-container h2{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .summaries-container{
+        margin-bottom: 1.5rem;
+    }
+
+    .files-container{
+        display: flex;
+        gap: 1.5rem;
+
+        margin-top: 1rem;
+        padding: 0.3rem 1rem 1rem 1rem;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .files-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .files-container a{
+        display: flex;
+        flex-direction: column;
+        
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .files-container a .file-icon{
+        background-color: var(--bg-color);
+        border-radius: 8px;
+        width: 3rem;
+
+        margin: 0 auto 0.6rem auto;
+        padding: 0.6rem 0.2rem;
+        font-size: 1.2rem;
+        color: red;
+    }
+
+    .exam-container{
+        margin-top: 1rem;
+    }
+
+    .exam{
+        display: flex;
+        gap: 1rem;        
+
+        background-color: var(--bg-color);
+        border-radius: 8px;
+
+        padding: 0.8rem 1.5rem;
+        margin: 0rem 0.5rem 1rem 0.5rem;
+    }
+
+    .exam-details{
+        display: block;
+        width: 100%;
+
+        color: black;
+        text-decoration: none;
+    }
+
+    .exam-details h2{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 0.2rem;
+    }
+    .exam-details span{
+        font-size: 0.7rem;
+        padding-right: 0.2rem;
+    }
+    
+    .exam input[type='checkbox']:checked ~ .exam-details h2{
+        text-decoration: line-through;
+    }
+
+}
+
+/* Laptops */
+@media screen and (max-width: 1024px) {
+
+
+}
+
+/* Desktop */
+@media screen and (max-width: 1200px) {
+
+}
